@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>Select Number of Duration</h3>
+    <form name="foo" onsubmit="HandleSubmit(event)">
+      <input type="number" name="duration" id="duration" />
+      <button type="submit">Submit</button>
+    </form>
+
+    <script>
+      const HandleSubmit = (e) => {
+        e.preventDefault();
+        const data = document.forms["foo"]["duration"].value;
+        const { duration } = data;
+        sessionStorage.setItem("formData", JSON.stringify(data));
+        window.location.href = "index.html";
+      };
+    </script>
+  </body>
+</html>
