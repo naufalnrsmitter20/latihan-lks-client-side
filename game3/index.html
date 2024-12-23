@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game 2D v3</title>
+    <link rel="stylesheet" href="src//style/style.css" />
+  </head>
+  <body>
+    <section>
+      <button type="button" onclick="HandleSetting()" class="setting button">
+        <img src="/asset/setting.png" alt="" width="50px" />
+      </button>
+      <button type="button" onclick="startMusic()" class="music button">
+        <img src="/asset/Asset Music.png" alt="" width="50px" />
+      </button>
+      <input class="range" type="range" min="0" max="1" step="0.05" value="0.5" />
+      <canvas></canvas>
+      <div class="popup">
+        <button onclick="continueGame()" class="continue button"><img width="200" src="/asset/Continue.png" alt="" /></button>
+        <button onclick="restartGame()" class="restart button"><img width="200" src="/asset/Restart Game.png" alt="" /></button>
+        <button onclick="QuitGame()" class="quit button"><img width="200" src="/asset/Quit.png" alt="" /></button>
+      </div>
+    </section>
+    <script src="./src/Classes/Button.js"></script>
+    <script src="./src/Classes/Ground.js"></script>
+    <script src="./src/Classes/Enemy.js"></script>
+    <script src="./src/Classes/Player.js"></script>
+    <script src="./src/index.js"></script>
+  </body>
+</html>

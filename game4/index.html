@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mosnter Mayhem</title>
+    <link rel="stylesheet" href="src/style/style.css" />
+  </head>
+  <body class="body">
+    <p id="session" style="position: absolute; top: 0; left: 0; margin: 20px"></p>
+    <section class="main-bg">
+      <section class="sect">
+        <div class="item-group-1">
+          <button onclick="onClickSound()" type="button" class="button rounded music"><img width="50" src="/src/asset/img/Asset Lainya/Asset Music.png" alt="" /></button>
+          <button onclick="onClickSettings()" type="button" class="button rounded setting"><img width="50" src="/src/asset/img/Asset Lainya/setting.png" alt="" /></button>
+        </div>
+        <div class="item-group-2">
+          <button onclick="onPlay()" type="button" class="button play"><img width="200" src="/src/asset/img/Asset Lainya/Play.png" alt="" /></button>
+          <button onclick="onClickProfile()" type="button" class="button profile"><img width="200" src="/src/asset/img/Asset Lainya/Profile.png" alt="" /></button>
+          <button onclick="onClickQuit()" type="button" class="button quit"><img width="200" src="/src/asset/img/Asset Lainya/Quit.png" alt="" /></button>
+        </div>
+        <div id="form-input" class="form-input hide">
+          <div class="form-group">
+            <form name="form-user" class="form-1" onsubmit="fillUserName(event)">
+              <label style="font-size: medium; font-weight: 600" for="username">Input Username</label>
+              <div style="margin-top: 8px; margin-bottom: 15px">
+                <input class="field" name="username" id="username" type="text" placeholder="Masukkan Username" />
+                <button style="padding: 12px 16px; border-radius: 8px; background-color: lightskyblue; font-size: 16px; font-weight: 600" type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div id="manage-volume" class="manage-volume hids">
+          <div class="form-group">
+            <div class="volumeForm">
+              <label style="font-size: medium; font-weight: 600">Manage Volume</label>
+              <div style="margin-top: 8px; margin-bottom: 15px">
+                <input type="range" min="0" max="1" step="0.05" value="0.5" class="rangeInput" />
+                <button style="padding: 8px 12px; border-radius: 8px; background-color: lightcoral; font-size: 16px; font-weight: 600" type="button" onclick="onCloseSetting()">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <script src="gettingStarted.js"></script>
+  </body>
+</html>
