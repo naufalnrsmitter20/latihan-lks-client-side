@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game 5</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      #canvasGame {
+        border: 3px solid #ccc;
+        display: block;
+        margin: 20px auto;
+        background-color: #f0f0f0;
+      }
+      #circle {
+        margin-top: 10px;
+        display: inline-block;
+      }
+      .info {
+        text-align: center;
+        margin: 15px 0;
+        font-family: Arial, sans-serif;
+        color: #333;
+      }
+      .score {
+        display: flex;
+        justify-content: space-around;
+        margin: 15px 0;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: Arial, sans-serif;
+        color: #444;
+      }
+      body {
+        margin: 0;
+        background-color: #eaeaea;
+        font-family: Arial, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="info">
+      <h1>Game</h1>
+      <div id="circle"></div>
+      <p id="player">Player Turn:</p>
+    </div>
+    <div class="score">
+      <div id="orange-score">Orange Score: 0</div>
+      <div id="black-score">Black Score: 0</div>
+    </div>
+    <section class="container">
+      <canvas id="canvasGame" width="560" height="560"></canvas>
+    </section>
+    <script src="index2.js"></script>
+  </body>
+</html>

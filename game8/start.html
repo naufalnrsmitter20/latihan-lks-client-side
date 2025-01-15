@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Getting started</title>
+    <link rel="stylesheet" href="public/css/start.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="myForm" class="sub-container">
+        <h1>Selamat datang di Game Number Puzzle - Sliding Puzzle</h1>
+        <div class="form-item">
+          <label for="name">Nama</label>
+          <input id="name" required name="name" type="text" placeholder="masukkan nama kamu" class="text-field" />
+        </div>
+        <div class="form-item">
+          <label for="board">Pilih Board</label>
+          <select id="board" required name="board" class="text-field">
+            <option value="">select</option>
+            <option value="3">3X3</option>
+            <option value="4">4X4</option>
+            <option value="5">5X5</option>
+          </select>
+        </div>
+        <div class="form-item">
+          <button type="submit" class="btn">Submit</button>
+        </div>
+      </form>
+    </div>
+    <script src="src/js/start.js"></script>
+  </body>
+</html>

@@ -2,6 +2,12 @@
   margin: 0;
   padding: 0;
 }
+button {
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
 
 section.container {
   background-image: url("/src/asset/img/Background/Map.png");
@@ -17,4 +23,21 @@ div.sub-container {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.item-group-1 {
+  display: flex;
+  width: 100%;
+  justify-content: start;
+  align-items: baseline;
+  position: fixed;
+  padding-top: 78px;
+  gap: 20px;
+  z-index: 100;
+  padding-left: 20px;
+}
+
+button.title {
+  position: fixed;
+  top: 10px;
 }

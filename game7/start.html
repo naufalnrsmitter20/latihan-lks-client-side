@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Start</title>
+    <link rel="stylesheet" href="src/style/start.css" />
+  </head>
+  <body>
+    <section class="container-1">
+      <div class="main">
+        <img src="src/asset/shooter.png" width="100" alt="img shooter" />
+        <div class="input-group">
+          <input class="field" type="text" placeholder="Input Username" name="username" id="username" />
+          <select name="level" class="field" id="level">
+            <option value="">Select Level</option>
+            <option value="easy">easy</option>
+            <option value="medium">medium</option>
+            <option value="hard">hard</option>
+          </select>
+        </div>
+        <form class="shooter">
+          <div class="shooter-1">
+            <img width="60" src="/src/asset/gun1.png" alt="gun 1" />
+            <input required class="radiocheck" value="/src/asset/gun1.png" type="radio" name="gun" id="1" />
+          </div>
+          <div class="shooter-2">
+            <img width="60" src="/src/asset/gun2.png" alt="gun 2" />
+            <input required class="radiocheck" value="/src/asset/gun2.png" type="radio" name="gun" id="2" />
+          </div>
+        </form>
+        <form class="target">
+          <div class="target-2">
+            <img width="60" src="/src/asset/target2.png" alt="target 2" />
+            <input required class="radiocheck" value="/src/asset/target2.png" type="radio" name="target" id="2" />
+          </div>
+          <div class="target-1">
+            <img width="60" src="/src/asset/target1.png" alt="target 1" />
+            <input required class="radiocheck" value="/src/asset/target1.png" type="radio" name="target" id="1" />
+          </div>
+          <div class="target-3">
+            <img width="60" src="/src/asset/target3.png" alt="target 3" />
+            <input required class="radiocheck" value="/src/asset/target3.png" type="radio" name="target" id="3" />
+          </div>
+        </form>
+        <div class="button-group">
+          <button type="button" id="play" class="btn play">Play Game</button>
+          <button onclick="AddModal()" type="button" id="instruction" class="btn instructions">Instruction</button>
+        </div>
+      </div>
+      <div id="modal" class="modal hide">
+        <div>
+          <h1>How to play game</h1>
+          <p>1. Input username</p>
+          <p>2. Point the pointer at the target</p>
+          <p>3. Click to shoot</p>
+          <p>4. Get as many points as possible</p>
+          <p>5. Enjoy!</p>
+        </div>
+        <div class="close">
+          <button onclick="HideModal()" type="button" id="close-btn">X</button>
+        </div>
+      </div>
+    </section>
+    <script src="start.js"></script>
+  </body>
+</html>

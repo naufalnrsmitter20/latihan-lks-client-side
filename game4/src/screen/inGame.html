@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="style/InGame.css" />
+  </head>
+  <body>
+    <section class="bg-container"><canvas></canvas></section>
+    <div class="item-group-1">
+      <button onclick="onClickSettings()" type="button" class="button rounded setting"><img width="50" src="/src/asset/img/Asset Lainya/setting.png" /></button>
+      <button onclick="onClickSound()" type="button" class="button rounded music"><img width="50" src="/src/asset/img/Asset Lainya/Asset Music.png" /></button>
+    </div>
+    <div id="manage-volume" class="manage-volume hids">
+      <div class="form-group">
+        <div class="volumeForm">
+          <div class="card-container">
+            <button class="pengaturan button">Pengaturan</button>
+          </div>
+          <div style="margin-top: 8px; margin-bottom: 15px; display: flex; flex-direction: column; margin: 40px 60px">
+            <button onclick="onCloseSetting()" type="button" class="button"><img class="main-set" src="/src/asset/img/Asset Lainya/Continue.png" /></button>
+            <button onclick="window.location.href = '/index.html'" type="button" class="button"><img class="main-set" src="/src/asset/img/Asset Lainya/Quit Game.png" /></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="script/InGame.js"></script>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game 7</title>
+    <link rel="stylesheet" href="src/style/style.css" />
+  </head>
+  <body>
+    <section class="container-1">
+      <canvas></canvas>
+      <div class="leaderboard">
+        <h1>Leaderboard</h1>
+        <div>
+          <select class="input-select" name="sort" id="sort">
+            <option value="">select</option>
+            <option value="score-sort">Sort by Score</option>
+            <option value="last-match-sort">Sort by Last Matches</option>
+          </select>
+          <div style="margin-top: 10px">
+            <div id="history-game"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="count-container">
+      <h1 id="countdown" class="countdown"></h1>
+    </div>
+    <section id="modal-show" class="modal-backdrop hide">
+      <div class="modal">
+        <h1 style="text-align: center; color: black; font-size: 24px; font-family: Arial, Helvetica, sans-serif; margin: 24px 0 40px 0">Game Paused!</h1>
+        <div>
+          <button onclick="PauseGame()" class="btn continue">Continue</button>
+          <button onclick="window.location.href = '/start.html'" class="btn quit">Quit</button>
+        </div>
+      </div>
+    </section>
+    <section id="modal-game-over" class="modal-backdrop hide">
+      <div class="modal">
+        <h1 style="text-align: center; color: black; font-size: 24px; font-family: Arial, Helvetica, sans-serif; margin: 24px 0 40px 0">Game Over!</h1>
+        <p id="username" style="text-align: start; color: black; font-size: 16px; font-family: Arial, Helvetica, sans-serif; margin: 10px"></p>
+        <p id="score" style="text-align: start; color: black; font-size: 16px; font-family: Arial, Helvetica, sans-serif; margin: 10px"></p>
+        <div>
+          <button onclick="saveHistory()" class="btn continue">Save Score</button>
+          <button onclick="window.location.reload()" class="btn quit">Restart</button>
+        </div>
+      </div>
+    </section>
+    <script src="src/classes/Pointer.js"></script>
+    <script src="src/classes/Enemy.js"></script>
+    <script src="src/classes/Grip.js"></script>
+    <script src="src/index.js"></script>
+  </body>
+</html>
